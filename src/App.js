@@ -1,94 +1,126 @@
 import logo from './logo.svg';
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
-import AddStock from './addstock';
 
 
 function App() {
-  const [showAddStock, setShowAddStock] = useState(false);
-
-  if (showAddStock) {
-    return <AddStock />;
-  }
-
   return (
-    <div className="App" style={{ backgroundColor: 'black', color: 'white' }}>
-      <header className="App-header">
-      <div style={{ position: 'absolute', top: 0, left: 0, display: 'flex', alignItems: 'center' }}>
-          <img src={logo} className="App-logo" alt="logo" style={{ height: '50px', width: '50px' }} />
-          <input 
-            type="search" 
-            placeholder="Search..." 
+    <div style={{
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      paddingTop: '50px',
+      overflowY: 'scroll'
+    }}>
+      <h1 style={{ fontSize: '2em', marginBottom: '20px' }}>Brooke Joseph</h1>
+      <div style={{
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'center',
+        flexWrap: 'wrap',
+      }}>
+        <a href="https://twitter.com/BrookeaJoseph" target="_blank" rel="noopener noreferrer">
+          <button 
             style={{
-              margin: '10px',
-              padding: '5px',
-              fontSize: '16px'
+              backgroundColor: 'transparent',
+              color: 'pink',
+              padding: '10px',
+              fontSize: '16px',
+              border: 'none',
+              borderRadius: '4px',
+              margin: '10px'
             }}
-          />
-        </div>
+          >
+            Twitter 
+          </button>
+        </a>
+        <a href="https://medium.com/@brookeajoseph17" target="_blank" rel="noopener noreferrer">
+          <button 
+            style={{
+              backgroundColor: 'transparent',
+              color: 'pink',
+              padding: '10px',
+              fontSize: '16px',
+              border: 'none',
+              borderRadius: '4px',
+              margin: '10px'
+            }}
+          >
+            My thoughts 
+          </button>
+        </a>
+        <a href="https://www.linkedin.com/in/brooke-joseph-0a7525196/" target="_blank" rel="noopener noreferrer">
+          <button 
+            style={{
+              backgroundColor: 'transparent',
+              color: 'pink',
+              padding: '10px',
+              fontSize: '16px',
+              border: 'none',
+              borderRadius: '4px',
+              margin: '10px'
+            }}
+          >
+            LinkedIn 
+          </button>
+        </a>
+        <a href="https://github.com/brookejoseph" target="_blank" rel="noopener noreferrer">
+          <button 
+            style={{
+              backgroundColor: 'transparent',
+              color: 'pink',
+              padding: '10px',
+              fontSize: '16px',
+              border: 'none',
+              borderRadius: '4px',
+              margin: '10px'
+            }}
+          >
+            GitHub 
+          </button>
+        </a>
+      <a href="https://www.example.com" target="_blank" rel="noopener noreferrer">
         <button 
-          onClick={() => setShowAddStock(true)}
           style={{
-            position: 'absolute',
-            top: 200,
-            left: 50,
-            backgroundColor: 'white',
-            color: 'black',
+            backgroundColor: 'transparent',
+            color: 'pink',
             padding: '10px',
             fontSize: '16px',
             border: 'none',
-            borderRadius: '4px'
+            borderRadius: '4px',
+            margin: '10px'
           }}
         >
-          Add new stock
+          Example Page 
         </button>
-        <p style={{
-          backgroundColor: 'white',
-          color: 'black',
-          padding: '10px',
-          fontSize: '16px',
-          width: '200px',
-          margin: 'auto',
-          marginTop: '20px',
-          position: 'absolute',
-          top: 180,
-          left: 300,
-          borderRadius: '4px'
-        }}>
-          Trades:
-        </p>
-        <p style={{
-          backgroundColor: 'white',
-          color: 'black',
-          padding: '10px',
-          fontSize: '16px',
-          width: '200px',
-          margin: 'auto',
-          marginTop: '20px',
-          position: 'absolute',
-          top: 180,
-          left: 700,
-          borderRadius: '4px'
-        }}>
-          Top trade:
-        </p>
-        <p style={{
-          backgroundColor: 'white',
-          color: 'black',
-          padding: '10px',
-          fontSize: '16px',
-          width: '200px',
-          margin: 'auto',
-          marginTop: '20px',
-          position: 'absolute',
-          top: 180,
-          left: 1100,
-          borderRadius: '4px'
-        }}>
-          Worst trade:
-        </p>
-      </header>
+      </a>
+      </div>
+
+      <div className="left-align">
+        <h2>Background</h2>
+        <ul style={{ marginLeft: '100px' }}>
+          <li>From the canadian detroit, currently studying at Waterloo</li>
+          <li>I love lifting weights and have ran a run marathons</li>
+          <li>Love love love travelling and meeting new people from different backgrounds</li>
+        </ul>
+      </div>
+
+      <div className="left-align">
+        <h2>What I've built</h2>
+        <ul style={{ marginLeft: '100px' }}>
+          <li>Worked with software engieers at Devron to add Differential Privacy into their exisitng platform.
+            Helping meet privacy quota. 
+          </li>
+          <li>Attempted to use Raspberry Pis to create a real Federated environment 
+            that would replicate exactly how these models work in a real application</li>
+          <li>Worked alongside Amazon to pitch a solution for Alexa. Using NLP, FL, DP and 
+            Generative AI we created an Alexa for the workplace to increase connectivity </li>
+          <li>Currently building knowlegde graphs that help address information overload by laying out a clear path to learn whatever you want </li>
+        </ul>
+      </div>
     </div>
+    
   );
 }
 
