@@ -31,7 +31,17 @@
 
 .left-align {
   text-align: left;
-  margin-left: -400px
+  margin-left: -385px
+}
+
+.my-align {
+  text-align: left;
+  margin-left: 90px
+}
+
+.my-align2 {
+  text-align: left;
+  margin-left: 30px
 }
 @keyframes App-logo-spin {
   from {
@@ -40,4 +50,21 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.type-effect {
+  border-right: 2px solid;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 1s steps(40, end), blink 0.75s step-end infinite;
 }
