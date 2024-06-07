@@ -87,7 +87,7 @@ function App() {
         <h2 style={{ fontFamily: 'Times New Roman', textAlign: 'center', fontSize: '2em', color: '#C39BD3' }}>Other Cool Stuff</h2>
         <div style={{ marginLeft: '20px', wordWrap: 'break-word' }}>
           <h3 style={{ fontFamily: 'Times New Roman', fontSize: '1.5em', color: '#C39BD3' }}>Presented at Google</h3>
-          <p style={{ fontFamily: 'Times New Roman', fontSize: '1.2em' }}>Was invited to give a presentation on my projects and research in Federated Learning. Specifically looking at how to incorporate Differential Privacy and the challenges with that.</p>
+          <p style={{ fontFamily: 'Times New Roman', fontSize: '1.2em' }}>I was invited to give a presentation on my projects and research in Federated Learning. Specifically looking at how to incorporate Differential Privacy and the challenges with that.</p>
           <h3 style={{ fontFamily: 'Times New Roman', fontSize: '1.5em', color: '#C39BD3' }}>Created Multimodal Knowledge Graphs</h3>
           <p style={{ fontFamily: 'Times New Roman', fontSize: '1.2em' }}>Helping to streamline the learning process. Presented to over 1000 people and gained 700 sign-ups.</p>
           <h3 style={{ fontFamily: 'Times New Roman', fontSize: '1.5em', color: '#C39BD3' }}>Alexa Scheduling Optimizer</h3>
@@ -99,7 +99,7 @@ function App() {
           <h3 style={{ fontFamily: 'Times New Roman', fontSize: '1.5em', color: '#C39BD3' }}>International Marathon Runner</h3>
           <p style={{ fontFamily: 'Times New Roman', fontSize: '1.2em' }}>Travelled all over to compete in half and full marathons, ranking top 20 in my age group for the Detroit Marathon.</p>
           <h3 style={{ fontFamily: 'Times New Roman', fontSize: '1.5em', color: '#C39BD3' }}>Google WomenTechMaker</h3>
-          <p style={{ fontFamily: 'Times New Roman', fontSize: '1.2em' }}>Selected by Google to help mentor women in tech, orgianze Google events and invited to speak on research.</p>
+          <p style={{ fontFamily: 'Times New Roman', fontSize: '1.2em' }}>Selected by Google to help mentor women in tech, organize Google events and invited to speak on research.</p>
         </div>
       </div>
       <div style={{ width: '100%', maxWidth: '1100px' }}>
