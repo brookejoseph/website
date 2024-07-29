@@ -98,7 +98,7 @@ function App() {
           <p style={{ fontFamily: 'Times New Roman', fontSize: '1.2em' }}>Invited to give presentations all over the world (Germany, Toronto, Washington DC, etc.) on my research in Differential Privacy. Over 80,000 people in attendance across all conferences.</p>
           <h3 style={{ fontFamily: 'Times New Roman', fontSize: '1.5em', color: '#C39BD3' }}>International Marathon Runner</h3>
           <p style={{ fontFamily: 'Times New Roman', fontSize: '1.2em' }}>Travelled all over to compete in half and full marathons, ranking top 20 in my age group for the Detroit Marathon.</p>
-          <h3 style={{ fontFamily: 'Times New Roman', fontSize: '1.5em', color: '#C39BD3' }}>App Developement/h3>
+          <h3 style={{ fontFamily: 'Times New Roman', fontSize: '1.5em', color: '#C39BD3' }}>App Developement</h3>
           <ul style={{ fontFamily: 'Times New Roman', fontSize: '1.2em' }}>
             <li>Contributed to the development of a voice assistant app. My role involved fine-tuning models and integrating text-to-speech technology. (<a href="https://mymemoirs.app" target="_blank" rel="noopener noreferrer">mymemoirs.app</a>)</li>
             <li>Recreated character AI with alternating moods. (<a href="https://trycarson.com" target="_blank" rel="noopener noreferrer">trycarson.com</a>)</li>
