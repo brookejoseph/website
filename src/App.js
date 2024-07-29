@@ -74,7 +74,7 @@ function App() {
         <h2 style={{ fontFamily: 'Times New Roman', textAlign: 'center', fontSize: '2em', color: '#C39BD3' }}>Experiences</h2>
         <div style={{ marginLeft: '20px', wordWrap: 'break-word' }}>
           <h3 style={{ fontFamily: 'Times New Roman', fontSize: '1.5em', color: '#C39BD3'}}>Stealth Startup - Toronto</h3>
-          <p style={{ fontFamily: 'Times New Roman', fontSize: '1.2em' }}>Working with previous founders at Maluuba and Wish. Helping build different apps currently helped reach 100k users in one month.</p>
+          <p style={{ fontFamily: 'Times New Roman', fontSize: '1.2em' }}>Working with previous founders at Maluuba and Wish. Built 3 apps end-to-end with 100k users. Worked with convex, next js, react, react native, typescript, LLM finetuning/evaluation </p>
           <h3 style={{ fontFamily: 'Times New Roman', fontSize: '1.5em', color: '#C39BD3' }}>Devron - New York</h3>
           <p style={{ fontFamily: 'Times New Roman', fontSize: '1.2em' }}>Collaborated with senior engineers to incorporate Differential Privacy into their platform. This involved navigating and understanding their complex infrastructure to ensure effective implementation.</p>
           <h3 style={{ fontFamily: 'Times New Roman', fontSize: '1.5em', color: '#C39BD3'}}>TensoAI - Montreal</h3>
@@ -91,15 +91,24 @@ function App() {
           <h3 style={{ fontFamily: 'Times New Roman', fontSize: '1.5em', color: '#C39BD3' }}>Created Multimodal Knowledge Graphs</h3>
           <p style={{ fontFamily: 'Times New Roman', fontSize: '1.2em' }}>Helping to streamline the learning process. Presented to over 1000 people and gained 700 sign-ups.</p>
           <h3 style={{ fontFamily: 'Times New Roman', fontSize: '1.5em', color: '#C39BD3' }}>Alexa Scheduling Optimizer</h3>
-          <p style={{ fontFamily: 'Times New Roman', fontSize: '1.2em' }}>Competed against 700 people across the world in an Amazon challenge and received 2nd place. I had a call with executives at Amazon to discuss how to build our product. I was responsible for securing the data and all the privacy implications.</p>
+          <p style={{ fontFamily: 'Times New Roman', fontSize: '1.2em' }}>Received 2nd place out of 700 participants in a global Amazon hackathon. Our team was invited to present our solution to Amazon executives for potential implementation.</p>
           <h3 style={{ fontFamily: 'Times New Roman', fontSize: '1.5em', color: '#C39BD3' }}>Multi-GPU Training</h3>
           <p style={{ fontFamily: 'Times New Roman', fontSize: '1.2em' }}>Worked with a PhD at MIT investigating how to train a CNN on medical data for disease prediction.</p>
           <h3 style={{ fontFamily: 'Times New Roman', fontSize: '1.5em', color: '#C39BD3' }}>Differential Privacy Research</h3>
-          <p style={{ fontFamily: 'Times New Roman', fontSize: '1.2em' }}>Invited to give presentations all over the world (Germany, Toronto, Washington DC, etc.) on my research in Differential Privacy. Specifically looking at ways to balance the privacy-utility tradeoff. Over 80,000 people in attendance across all conferences.</p>
+          <p style={{ fontFamily: 'Times New Roman', fontSize: '1.2em' }}>Invited to give presentations all over the world (Germany, Toronto, Washington DC, etc.) on my research in Differential Privacy. Over 80,000 people in attendance across all conferences.</p>
           <h3 style={{ fontFamily: 'Times New Roman', fontSize: '1.5em', color: '#C39BD3' }}>International Marathon Runner</h3>
           <p style={{ fontFamily: 'Times New Roman', fontSize: '1.2em' }}>Travelled all over to compete in half and full marathons, ranking top 20 in my age group for the Detroit Marathon.</p>
-          <h3 style={{ fontFamily: 'Times New Roman', fontSize: '1.5em', color: '#C39BD3' }}>Google WomenTechMaker</h3>
-          <p style={{ fontFamily: 'Times New Roman', fontSize: '1.2em' }}>Selected by Google to help mentor women in tech, organize Google events and invited to speak on research.</p>
+          <h3 style={{ fontFamily: 'Times New Roman', fontSize: '1.5em', color: '#C39BD3' }}>App Developement/h3>
+          <ul style={{ fontFamily: 'Times New Roman', fontSize: '1.2em' }}>
+            <li>Contributed to the development of a voice assistant app. My role involved fine-tuning models and integrating text-to-speech technology. (<a href="https://mymemoirs.app" target="_blank" rel="noopener noreferrer">mymemoirs.app</a>)</li>
+            <li>Recreated character AI with alternating moods. (<a href="https://trycarson.com" target="_blank" rel="noopener noreferrer">trycarson.com</a>)</li>
+            <li>Created a website that generates personalized hallmark cards.</li>
+            <li>Worked on finetuning diffusion models and LLMs. (<a href="https://sendhearts.app" target="_blank" rel="noopener noreferrer">sendhearts.app</a>)</li>
+            <li>Created a website to scrape YouTube for nostalgic candy commercials based on where and when you grew up. (<a href="https://gencandy.com" target="_blank" rel="noopener noreferrer">gencandy.com</a>)</li>
+            <li>Developed multimodal knowledge graphs enabling users to understand any topic.</li>
+            <li>Scraped the web to collect relevant articles, papers, and YouTube videos, and used RAG to optimize results and identify the most pertinent sections of the scraped documents.</li>
+            <li>Received 700 sign ups in 24 hours. (burrow)</li>
+          </ul>
         </div>
       </div>
       <div style={{ width: '100%', maxWidth: '1100px' }}>
