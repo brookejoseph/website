@@ -74,7 +74,7 @@ function App() {
         <h2 style={{ fontFamily: 'Times New Roman', textAlign: 'center', fontSize: '2em', color: '#C39BD3' }}>Experiences</h2>
         <div style={{ marginLeft: '20px', wordWrap: 'break-word' }}>
           <h3 style={{ fontFamily: 'Times New Roman', fontSize: '1.5em', color: '#C39BD3'}}>Stealth Startup - Toronto</h3>
-          <p style={{ fontFamily: 'Times New Roman', fontSize: '1.2em' }}>Working with previous founders at Maluuba and Wish. Built 3 apps end-to-end with 100k users. Worked with convex, next js, react, react native, typescript, LLM finetuning/evaluation </p>
+          <p style={{ fontFamily: 'Times New Roman', fontSize: '1.2em' }}>Working with previous founders at Maluuba and Wish. Built 5 apps end-to-end with 100k users. Worked with convex, next js, react, react native, typescript, LLM finetuning/evaluation </p>
           <h3 style={{ fontFamily: 'Times New Roman', fontSize: '1.5em', color: '#C39BD3' }}>Devron - New York</h3>
           <p style={{ fontFamily: 'Times New Roman', fontSize: '1.2em' }}>Collaborated with senior engineers to incorporate Differential Privacy into their platform. This involved navigating and understanding their complex infrastructure to ensure effective implementation.</p>
           <h3 style={{ fontFamily: 'Times New Roman', fontSize: '1.5em', color: '#C39BD3'}}>TensoAI - Montreal</h3>
