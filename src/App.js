@@ -580,7 +580,7 @@ function App() {
                 work hard but with direction. don't be the person who works for the sake of working.
               </li>
               <li className="plain-article-item">
-                empathy and kindness is a strength but many people interrupt it as a weakness. don't let them stop you from being kind and empathic. 
+                empathy and kindness is a strength but many people interpret it as a weakness. don't let them stop you from being kind and empathic. 
               </li>
               <li className="plain-article-item">
                 be urgent. period. i love urgent people who go from problem to idea to product or solution fast.
