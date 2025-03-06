@@ -1,11 +1,8 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
-
-
 import './App.css';
 
 function App() {
-  // State to track which section to display
   const [activeSection, setActiveSection] = useState('main');
   const [activeScrollSection, setActiveScrollSection] = useState('intro');
   
@@ -16,37 +13,31 @@ function App() {
     projects: useRef(null)
   };
 
-  // Function to handle scrolling to different sections within the main content
   const scrollToSection = (sectionId) => {
-    // If selecting writing or travel, switch to that view
-    if (sectionId === 'writing' || sectionId === 'travel' || sectionId === 'mental' || sectionId === 'videos') {
+    if (sectionId === 'writing' || sectionId === 'travel' || sectionId === 'mental' || 
+        sectionId === 'videos' || sectionId === 'values') {
       setActiveSection(sectionId);
       window.scrollTo(0, 0);
       return;
     }
     
-    // Otherwise, ensure we're in main view and scroll to the section
     setActiveSection('main');
-    
     const section = sectionRefs[sectionId].current;
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
-  // Update active section based on scroll position (only when in main view)
   useEffect(() => {
     const handleScroll = () => {
       if (activeSection !== 'main') return;
       
-      const scrollPosition = window.scrollY + 100; // offset for header
+      const scrollPosition = window.scrollY + 100;
 
-      // Check each section's position
       for (const section in sectionRefs) {
         const element = sectionRefs[section].current;
         if (element) {
           const { offsetTop, offsetHeight } = element;
-          
           if (
             scrollPosition >= offsetTop && 
             scrollPosition < offsetTop + offsetHeight
@@ -60,7 +51,7 @@ function App() {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [activeSection, sectionRefs]); // Added sectionRefs to dependency array
+  }, [activeSection, sectionRefs]);
 
   return (
     <div className="app-container">
@@ -88,13 +79,18 @@ function App() {
             >
               teams I've worked with 👩🏼‍💻
             </button>
+                        <button 
+              className={`nav-item ${activeSection === 'values' ? 'active' : ''}`}
+              onClick={() => scrollToSection('values')}
+            >
+              values 🌟
+            </button>
             <button 
               className={`nav-item ${activeSection === 'writing' ? 'active' : ''}`}
               onClick={() => scrollToSection('writing')}
             >
-              technial writing 🤓
+              technical writing 🤓
             </button>
-
             <button 
               className={`nav-item ${activeSection === 'videos' ? 'active' : ''}`}
               onClick={() => scrollToSection('videos')}
@@ -129,7 +125,6 @@ function App() {
 
       {/* MAIN CONTENT */}
       <main className="main-content">
-        {/* Sticky header that changes based on section */}
         <div className="sticky-header">
           <div className="section-indicator">
             {activeSection === 'main' && activeScrollSection === 'intro' && 'BROOKE JOSEPH'}
@@ -138,15 +133,14 @@ function App() {
             {activeSection === 'main' && activeScrollSection === 'projects' && 'IN PAST LIVES: PROJECTS'}
             {activeSection === 'writing' && 'TECHNICAL WRITING'}
             {activeSection === 'mental' && 'PUBLIC NOTES APP'}
-            {activeSection === 'videos' && 'VIDEOS'} {/* Changed == to === */}
+            {activeSection === 'videos' && 'VIDEOS'}
+            {activeSection === 'values' && 'VALUES'}
             {activeSection === 'travel' && 'TRAVEL'}
           </div>
         </div>
 
-        {/* Main scrollable content (home, now, work, projects) */}
         {activeSection === 'main' && (
           <>
-            {/* HEADER / INTRO SECTION */}
             <header className="header" ref={sectionRefs.intro}>
               <div className="header-content">
                 <div className="header-image">
@@ -155,24 +149,17 @@ function App() {
                 <div className="header-text">
                   <h1>BROOKE JOSEPH</h1>
                   <p className="location">
-                    📍 Currently: In Sweden (<a href="https://twitter.com/BrookeaJoseph">say hi</a>) or shoot me an email: <a href="mailto:brooke@joseph.com">brooke@joseph.com</a>
+                    📍 Currently: In Sweden (<a href="https://twitter.com/BrookeaJoseph">say hi</a>)
                   </p>
                 </div>
               </div>
-              
               <p className="philosophy">
-                I work for my 10 and 80 year old self. I belive true happiness comes from giving more to the world more than you take and solving the problems that matter most to you. 
-              </p>
-              
-              <p className="interests">
-                Not possible to list all of my interests but here are a few: consumer tech, low level systems (compilers, etc.), applied math for nuclear physics, lifting weights, travelling the world, etc.
+                I work for my 10 and 80 year old self. I believe true happiness comes from giving more to the world more than you take and solving the problems that matter most to you. 
               </p>
             </header>
 
-            {/* RIGHT NOW I'M SECTION */}
             <section className="section" ref={sectionRefs.now}>
               <h2 className="section-title">RIGHT NOW I'M</h2>
-              
               <ul className="current-list">
                 <li>I'm training models on embedded systems at Ekkono 🍃 (knowledge distillation and quantization)</li>
                 <li>Solo travelling Europe</li>
@@ -181,69 +168,64 @@ function App() {
               </ul>
             </section>
 
-            {/* IN PAST LIVES: WORK SECTION */}
             <section className="section" ref={sectionRefs.work}>
               <h2 className="section-title">IN PAST LIVES I EXPLORED</h2>
-              
               <h3 className="subsection-title">TEAMS IVE WORKED WITH</h3>
-              
-                <div className="cards-container">
-                  <div className="card purple-hover">
-                    <div className="card-content">
-                      <h4 className="card-title">Ekkono</h4>
-                      <p className="card-description">
-                        Making models smaller, doing work in model quantization and knowledge distillation.
-                      </p>
-                      <p className="card-date">Sweden</p>
-                    </div>
+              <div className="cards-container">
+                <div className="card purple-hover">
+                  <div className="card-content">
+                    <h4 className="card-title">Ekkono</h4>
+                    <p className="card-description">
+                      Making models smaller, doing work in model quantization and knowledge distillation.
+                    </p>
+                    <p className="card-date">Sweden</p>
                   </div>
-                  
-                  <div className="card pink-hover">
-                    <div className="card-content">
-                      <h4 className="card-title">Stealth</h4>
-                      <p className="card-description">
-                        Worked with founders who previously scaled to billon $ companies. Built 5 apps end-to-end with <b>100k users.</b> (did growth, building, product design, etc.)
-                      </p>
-                      <p className="card-date">Toronto</p>
-                    </div>
-                  </div>
-                  
-                  <div className="card yellow-hover">
-                    <div className="card-content">
-                      <h4 className="card-title">Devron</h4>
-                      <p className="card-description">
-                        Collaborated with senior engineers to incorporate Differential Privacy into their platform, navigating complex infrastructure.
-                      </p>
-                      <p className="card-date">New York</p>
-                    </div>
                 </div>
                 
-                  <div className="card purple-hover">
-                    <div className="card-content">
-                      <h4 className="card-title">CEP</h4>
+                <div className="card pink-hover">
+                  <div className="card-content">
+                    <h4 className="card-title">Stealth</h4>
                     <p className="card-description">
-                      Helping fix a broken educational system in the US. Building tools for an amazing non-profit. 
-                      </p>
-                      <p className="card-date">America</p>
-                    </div>
-                  </div>
-                  
-                  <div className="card pink-hover">
-                    <div className="card-content">
-                      <h4 className="card-title">Dr Tong Lab</h4>
-                      <p className="card-description">
-                        I made 3D models of proteins.
-                      </p>
-                      <p className="card-date">Canada</p>
-                    </div>
+                      Worked with founders who previously scaled to billon $ companies. Built 5 apps end-to-end with <b>100k users.</b> (did growth, building, product design, etc.)
+                    </p>
+                    <p className="card-date">Toronto</p>
                   </div>
                 </div>
+                
+                <div className="card yellow-hover">
+                  <div className="card-content">
+                    <h4 className="card-title">Devron</h4>
+                    <p className="card-description">
+                      Collaborated with senior engineers to incorporate Differential Privacy into their platform, navigating complex infrastructure.
+                    </p>
+                    <p className="card-date">New York</p>
+                  </div>
+                </div>
+                
+                <div className="card purple-hover">
+                  <div className="card-content">
+                    <h4 className="card-title">CEP</h4>
+                    <p className="card-description">
+                      Helping fix a broken educational system in the US. Building tools for an amazing non-profit. 
+                    </p>
+                    <p className="card-date">America</p>
+                  </div>
+                </div>
+                
+                <div className="card pink-hover">
+                  <div className="card-content">
+                    <h4 className="card-title">Dr Tong Lab</h4>
+                    <p className="card-description">
+                      I made 3D models of proteins.
+                    </p>
+                    <p className="card-date">Canada</p>
+                  </div>
+                </div>
+              </div>
             </section>
 
-            {/* IN PAST LIVES: PROJECTS SECTION */}
             <section className="section" ref={sectionRefs.projects}>
               <h3 className="subsection-title">BUILDS</h3>
-              
               <div className="cards-container">
                 <div className="card yellow-hover">
                   <div className="card-content">
@@ -305,12 +287,11 @@ function App() {
                   </div>
                 </div>
 
-
                 <div className="card pink-hover">
                   <div className="card-content">
                     <h4 className="card-title">Neo Scholar</h4>
                     <p className="card-description">
-                    Just a great community of amazing people. 
+                      Just a great community of amazing people. 
                     </p>
                     <p className="card-link"><a href="https://neo.substack.com/p/meet-the-2025-neo-scholars">See more</a></p>
                   </div>
@@ -320,7 +301,7 @@ function App() {
                   <div className="card-content">
                     <h4 className="card-title">Contrary VP</h4>
                     <p className="card-description">
-                    More amazing people!!
+                      More amazing people!!
                     </p>
                     <p className="card-link"><a href="https://www.contrary.com/blog/class-of-2025">See more</a></p>
                   </div>
@@ -340,7 +321,7 @@ function App() {
                   <div className="card-content">
                     <h4 className="card-title">More coming 🕑</h4>
                     <p className="card-description">
-                    always building....
+                      always building....
                     </p>
                   </div>
                 </div>
@@ -349,11 +330,9 @@ function App() {
           </>
         )}
 
-        {/* WRITING SECTION - Only displayed when selected */}
         {activeSection === 'writing' && (
           <section className="section">
             <h2 className="section-title">WRITING</h2>
-            
             <div className="cards-container">
               <div className="card pink-hover">
                 <div className="card-content">
@@ -364,7 +343,6 @@ function App() {
                   <p className="card-link"><a href="https://medium.com/@brookeajoseph17/introduction-to-differential-privacy-6a14c2a8ead2">Read</a></p>
                 </div>
               </div>
-              
               
               <div className="card purple-hover">
                 <div className="card-content">
@@ -396,17 +374,15 @@ function App() {
                 </div>
               </div>
 
-
-               <div className="card yellow-hover">
+              <div className="card yellow-hover">
                 <div className="card-content">
                   <h4 className="card-title">Leveraging Data for AgriTech</h4>
                   <p className="card-description">
-                    We could literally transform agriculture by leveraging data from exisitng widely used sensors.
+                    We could literally transform agriculture by leveraging data from existing widely used sensors.
                   </p>
                   <p className="card-link"><a href="https://medium.com/@brookeajoseph17/leveraging-data-insights-in-agriculture-4523f96d8bba">Read article</a></p>
                 </div>
               </div>
-              
 
               <div className="card purple-hover">
                 <div className="card-content">
@@ -417,7 +393,6 @@ function App() {
                   <p className="card-link"><a href="https://open.substack.com/pub/brookejoseph/p/breaking-the-90-barrier-how-ai-is?r=1rjzfc&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false">Read article</a></p>
                 </div>
               </div>
-              
               
               <div className="card yellow-hover">
                 <div className="card-content">
@@ -439,10 +414,6 @@ function App() {
                 </div>
               </div>
             </div>
-
-
-            
-            
             <div className="back-button-container">
               <button className="back-button" onClick={() => setActiveSection('main')}>
                 ← Back to main page
@@ -454,9 +425,7 @@ function App() {
         {activeSection === 'videos' && (
           <section className="section">
             <h2 className="section-title">VIDEOS</h2>
-            
             <div className="cards-container">
-              
               <div className="card yellow-hover">
                 <div className="card-video">
                   <div className="video-thumbnail" 
@@ -561,19 +530,14 @@ function App() {
                     <div className="play-button">▶</div>
                   </div>
                 </div>
-
-
                 <div className="card-content">
                   <h4 className="card-title">Neural Network by hand</h4>
                   <p className="card-description">
-                    I wrote a paper where I did the math in a nn by hand and I go throw it in this video.
+                    I wrote a paper where I did the math in a nn by hand and I go through it in this video.
                   </p>
                 </div>
               </div>
             </div>
-
-            
-            
             <div className="back-button-container">
               <button className="back-button" onClick={() => setActiveSection('main')}>
                 ← Back to main page
@@ -582,110 +546,217 @@ function App() {
           </section>
         )}
 
+        {activeSection === 'mental' && (
+          <section className="section">
+            <h2 className="section-title">PUBLIC NOTES</h2>
+            <ul className="plain-article-list">
+              <li className="plain-article-item">
+                <Link to="/pages/ambition" className="plain-link">
+                  My thoughts on ambition - authentic vs performative
+                </Link>
+              </li>
+              <li className="plain-article-item">
+                <Link to="/pages/work-ethic" className="plain-link">
+                  My thoughts on work ethic
+                </Link>
+              </li>
+            </ul>
+            <div className="back-button-container">
+              <button className="back-button" onClick={() => setActiveSection('main')}>
+                ← Back to main page
+              </button>
+            </div>
+          </section>
+        )}
 
-{activeSection === 'mental' && (
-  <section className="section">
-    <h2 className="section-title">PUBLIC NOTES</h2>
-    
-    <ul className="plain-article-list">
-      <li className="plain-article-item">
-        <a href="/page/introduction-to-differential-privacy" 
-           className="plain-link">
-          Introduction to Differential Privacy
-        </a>
-        <span className="plain-date">Mar 15, 2023</span>
-      </li>
-      
-      <li className="plain-article-item">
-        <a href="/page/brain-computer-interface-for-bipolar-disorder" 
-           className="plain-link">
-          Brain-Computer Interface for Bipolar Disorder
-        </a>
-        <span className="plain-date">May 3, 2023</span>
-      </li>
-      
-      <li className="plain-article-item">
-        <a href="/page/guide-to-privacy-preserving-technology" 
-           className="plain-link">
-          A Guide to Privacy Preserving Technology
-        </a>
-        <span className="plain-date">Jun 22, 2023</span>
-      </li>
+        {activeSection === 'values' && (
+          <section className="section">
+            <h2 className="section-title">VALUES</h2>
+            <ul className="plain-article-list">
+              <h1>
+              a few things I live by (these are things I tell myself almost everyday):
+              </h1>
+              <li className="plain-article-item">
+                work hard but with direction. don't be the person who works for the sake of working.
+              </li>
+              <li className="plain-article-item">
+                empathy and kindness is a strength but many people interrupt it as a weakness. don't let them stop you from being kind and empathic. 
+              </li>
+              <li className="plain-article-item">
+                be urgent. period. i love urgent people who go from problem to idea to product or solution fast.
+              </li>
+               <li className="plain-article-item">
+                stay manic, crazy and nerdy.
+              </li>
+              <li className="plain-article-item">
+               take care of your mind and body. sleep well, work out (everyday, no execuses), eat clean. 
+              </li>
+              <li className="plain-article-item">
+                stay curious about the world, if you care about a problem, go solve it, don't wait for other people. 
+              </li>
+              <li className="plain-article-item">
+                literally right now is the best time to do anything, stop talking, put together a plan and execute.
+              </li>
+              <li className="plain-article-item">
+                the best things are done with the help of many people. 
+              </li>
+              <li className="plain-article-item">
+                alway question what you're doing.
+              </li>
+              <li className="plain-article-item">
+                I respect my parents and grandparents a lot.
+              </li>
+            </ul>
+            <div className="back-button-container">
+              <button className="back-button" onClick={() => setActiveSection('main')}>
+                ← Back to main page
+              </button>
+            </div>
+          </section>
+        )}
 
-<li className="plain-article-item">
-  <Link to="/pages/beginners-guide-to-connectomics" 
-       className="plain-link">
-    Introduction to Differential Privacy
-  </Link>
-  <span className="plain-date">Mar 15, 2023</span>
-</li>
-
-      <li className="plain-article-item">
-        <a href="/page/breaking-the-90-barrier-ai-drug-development" 
-           className="plain-link">
-          Breaking the 90% Barrier: How AI is Transforming Drug Development
-        </a>
-        <span className="plain-date">Oct 5, 2023</span>
-      </li>
-    </ul>
-    
-    <div className="back-button-container">
-      <button className="back-button" onClick={() => setActiveSection('main')}>
-        ← Back to main page
-      </button>
-    </div>
-  </section>
-)}
-
-
-
-        {/* TRAVEL SECTION - Only displayed when selected */}
         {activeSection === 'travel' && (
           <section className="section">
             <h2 className="section-title">TRAVEL</h2>
-            
             <p className="travel-intro">
-              I've traveled to 17 countries and 22 US states, with a passion for exploring new cultures and cuisines.
+              I've traveled to 17 countries and 22 US states. Here are some of my favourite places. I'll add all my recommendations when I have time one day.
             </p>
-            
             <div className="cards-container">
               <div className="card yellow-hover">
-                <div className="card-image">
-                  <img src="https://images.unsplash.com/photo-1566408669374-5a6d5dca0b89?q=80&w=2787&auto=format&fit=crop" alt="Stockholm, Sweden" />
-                </div>
                 <div className="card-content">
-                  <h4 className="card-title">Stockholm, Sweden</h4>
+                  <h4 className="card-title">Malmo, Sweden</h4>
                   <p className="card-description">
-                    The perfect blend of modern design, historical architecture, and nature. The subway system is an art gallery in itself.
+                    Great if you're in Copenhagen and want to see Sweden. Lots of cute restaurants in the old part of the city.
                   </p>
                 </div>
               </div>
               
               <div className="card purple-hover">
-                <div className="card-image">
-                  <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=2940&auto=format&fit=crop" alt="Kyoto, Japan" />
-                </div>
                 <div className="card-content">
-                  <h4 className="card-title">Kyoto, Japan</h4>
+                  <h4 className="card-title">London, England</h4>
                   <p className="card-description">
-                    The perfect balance of tradition and modernity. The temples and gardens offer tranquility while the city provides excellent contemporary experiences.
+                    Classic, borough market, Kings Station (for harry potter fans), chelsea is my favourite area. 
+                  </p>
+                </div>
+              </div>
+
+              <div className="card purple-hover">
+                <div className="card-content">
+                  <h4 className="card-title">Paris, France</h4>
+                  <p className="card-description">
+                    Likely my favourite city in europe.
                   </p>
                 </div>
               </div>
               
-              <div className="card pink-hover">
-                <div className="card-image">
-                  <img src="https://images.unsplash.com/photo-1548115184-bc6544d06a58?q=80&w=2940&auto=format&fit=crop" alt="Beirut, Lebanon" />
-                </div>
+              <div className="card pink2-hover">
                 <div className="card-content">
-                  <h4 className="card-title">Beirut, Lebanon</h4>
+                  <h4 className="card-title">Gothenburg, Sweden</h4>
                   <p className="card-description">
-                    A city of contrasts with incredible resilience. The food is unmatched, the nightlife is vibrant, and the Mediterranean coastline is beautiful.
+                    Cute underground bars. I lived an hour from this city when I lived in Sweden so went often. 
+                  </p>
+                </div>
+              </div>
+
+              <div className="card pink-hover">
+                <div className="card-content">
+                  <h4 className="card-title">Amsterdam, Netherlands</h4>
+                  <p className="card-description">
+                    I've been here a few times, love the city, must have stroopwafel and fries and mayonnaise.
+                  </p>
+                </div>
+              </div>
+
+              <div className="card yellow-hover">
+                <div className="card-content">
+                  <h4 className="card-title">Villars, Switzerland</h4>
+                  <p className="card-description">
+                    Take a train through the mountains. Cheese and potatoes with pickles, so good omg. Only note, everything is pretty expensive lol.
+                  </p>
+                </div>
+              </div>
+
+              <div className="card purple-hover">
+                <div className="card-content">
+                  <h4 className="card-title">Dublin, Ireland</h4>
+                  <p className="card-description">
+                    Cute bars, you just have to go to temple bar. The city at night is pretty too. 
+                  </p>
+                </div>
+              </div>
+              
+              <div className="card pink2-hover">
+                <div className="card-content">
+                  <h4 className="card-title">Edinburgh, Scotland</h4>
+                  <p className="card-description">
+                    So aesthetic. For Harry Potter fans if you're in the UK you have to go. They also have a cool castle. It actually feels like you jumped in a time machine in this city.  
+                  </p>
+                </div>
+              </div>
+
+              <div className="card pink-hover">
+                <div className="card-content">
+                  <h4 className="card-title">Amsterdam, Netherlands</h4>
+                  <p className="card-description">
+                    I've been here a few times, love the city, must have stroopwafel and fries and mayonnaise.
+                  </p>
+                </div>
+              </div>
+
+              <div className="card yellow-hover">
+                <div className="card-content">
+                  <h4 className="card-title">Nice, France</h4>
+                  <p className="card-description">
+                    Nice in the super, go to Eze and Monaco. Also Italy is pretty close and def worth the trip. I also went to a perfume factory which was fun.
+                  </p>
+                </div>
+              </div>
+
+              <div className="card pink-hover">
+                <div className="card-content">
+                  <h4 className="card-title">Florence/Tuscany, Italy</h4>
+                  <p className="card-description">
+                    I had the best pasta of my life in Florence. Also spending a night on some farm in Tuscany is totally worth it.
+                  </p>
+                </div>
+              </div>
+
+              <div className="card yellow-hover">
+                <div className="card-content">
+                  <h4 className="card-title">Nice, France</h4>
+                  <p className="card-description">
+                    Nice in the super, go to Eze and Monaco. Also Italy is pretty close and def worth the trip. I also went to a perfume factory which was fun.
+                  </p>
+                </div>
+              </div>
+
+              <div className="card pink-hover">
+                <div className="card-content">
+                  <h4 className="card-title">New York, America</h4>
+                  <p className="card-description">
+                    My favourite city on the planet. period. 
+                  </p>
+                </div>
+              </div>
+
+              <div className="card pink-hover">
+                <div className="card-content">
+                  <h4 className="card-title">Montreal, Canada</h4>
+                  <p className="card-description">
+                   The best city in Canada by farrr. Although the builder scene in Toronto is better :/ 
+                  </p>
+                </div>
+              </div>
+
+              <div className="card pink-hover">
+                <div className="card-content">
+                  <h4 className="card-title">Naples, Florida</h4>
+                  <p className="card-description">
+                   Have spent a lot of time in Florida, Naples is my favourite city. Much better than Miami, its just very expensive :
                   </p>
                 </div>
               </div>
             </div>
-            
             <div className="back-button-container">
               <button className="back-button" onClick={() => setActiveSection('main')}>
                 ← Back to main page

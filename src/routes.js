@@ -1,16 +1,14 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import MainPortfolio from './App';
-import BrainComputerInterface from '../public/pages/beginners-guide-to-connectomics';
+import App from './App';
+import Ambitious from './pages/ambition';
 // Import other article pages
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<MainPortfolio />} />
-        <Route path="/page/introduction-to-differential-privacy" element={<DifferentialPrivacy />} />
-        <Route path="/page/brain-computer-interface-for-bipolar-disorder" element={<BrainComputerInterface />} />
-        {/* Add routes for other articles */}
+        <Route path="/" element={<App />} />
+        <Route path="/pages/ambition" element={<Ambitious />} />
       </Routes>
     </BrowserRouter>
   );
