@@ -241,7 +241,7 @@ function App() {
                   <div className="card-content">
                     <h4 className="card-title">GenTube</h4>
                     <p className="card-description">
-                      Built first iteration. Has scaled to 500k+ images generated since and millions of users.
+                      Built first iteration in 1 week. The team has scaled it to 500k+ images generated since and millions of users.
                     </p>
                     <p className="card-link"><a href="https://www.gentube.app/feed/spotlight">See more</a></p>
                   </div>
