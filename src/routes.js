@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from './App';
 import Ambitious from './pages/ambition';
+import WorkEthicReflection from './pages/work-ethic'
 // Import other article pages
 
 function App() {
@@ -9,6 +10,8 @@ function App() {
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/pages/ambition" element={<Ambitious />} />
+        <Route path="/pages/ambition" element={<WorkEthicReflection />} />
+
       </Routes>
     </BrowserRouter>
   );

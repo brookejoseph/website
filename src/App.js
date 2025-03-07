@@ -360,7 +360,7 @@ function App() {
                   <p className="card-description">
                     Exploring how BCI technology could revolutionize mental health treatment.
                   </p>
-                  <p className="card-link"><a href="https://medium.com/@brookeajoseph17/brain-computer-interface-for-bipolar-disorder-def65cd5cad0">Read article</a></p>
+                  <p className="card-link"><a href="https://medium.com/@brookeajoseph17/brain-computer-interface-for-bipolar-disorder-def65cd5cad0">Read</a></p>
                 </div>
               </div>
 
@@ -370,7 +370,7 @@ function App() {
                   <p className="card-description">
                     One of my many rabbit holes that converted into a post. Connectomics is insanely cool.
                   </p>
-                  <p className="card-link"><a href="https://medium.com/@brookeajoseph17/a-beginners-guide-to-connectomics-5b0581c9cb6f">Read article</a></p>
+                  <p className="card-link"><a href="https://medium.com/@brookeajoseph17/a-beginners-guide-to-connectomics-5b0581c9cb6f">Read</a></p>
                 </div>
               </div>
 
@@ -380,7 +380,7 @@ function App() {
                   <p className="card-description">
                     We could literally transform agriculture by leveraging data from existing widely used sensors.
                   </p>
-                  <p className="card-link"><a href="https://medium.com/@brookeajoseph17/leveraging-data-insights-in-agriculture-4523f96d8bba">Read article</a></p>
+                  <p className="card-link"><a href="https://medium.com/@brookeajoseph17/leveraging-data-insights-in-agriculture-4523f96d8bba">Read</a></p>
                 </div>
               </div>
 
@@ -390,7 +390,7 @@ function App() {
                   <p className="card-description">
                     My rant on how inefficient drug development is and why its killing us.
                   </p>
-                  <p className="card-link"><a href="https://open.substack.com/pub/brookejoseph/p/breaking-the-90-barrier-how-ai-is?r=1rjzfc&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false">Read article</a></p>
+                  <p className="card-link"><a href="https://open.substack.com/pub/brookejoseph/p/breaking-the-90-barrier-how-ai-is?r=1rjzfc&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false">Read</a></p>
                 </div>
               </div>
               
@@ -453,7 +453,7 @@ function App() {
                 <div className="card-content">
                   <h4 className="card-title">Federated Learning Explained</h4>
                   <p className="card-description">
-                    A deep dive into how federated learning.
+                    A deep dive into federated learning.
                   </p>
                 </div>
               </div>
@@ -580,10 +580,19 @@ function App() {
                 work hard but with direction. don't be the person who works for the sake of working.
               </li>
               <li className="plain-article-item">
-                empathy and kindness is a strength but many people interpret it as a weakness. don't let them stop you from being kind and empathic. 
+                having empathy and being kind are strengths. many people interpret it as a weakness. don't let them stop you from being kind and empathic. 
               </li>
               <li className="plain-article-item">
-                be urgent. period. i love urgent people who go from problem to idea to product or solution fast.
+                be urgent but thoughtful. i love urgent people who go from problem to idea to product or solution fast.
+              </li>
+              <li className="plain-article-item">
+                follow your gut. it might seem wrong but you're constantly finetuning your instincts and that invaluable. your intuition is the closet source of truth for yourself you will ever get.
+              </li>
+              <li className="plain-article-item">
+                take all advice with a grain of salt. live your own life and don't assume anyone else knows whats best for you.
+              </li>
+              <li className="plain-article-item">
+                give other people advice sparingly. its better to just be supportive.
               </li>
                <li className="plain-article-item">
                 stay manic, crazy and nerdy.
@@ -592,19 +601,19 @@ function App() {
                take care of your mind and body. sleep well, work out (everyday, no execuses), eat clean. 
               </li>
               <li className="plain-article-item">
-                stay curious about the world, if you care about a problem, go solve it, don't wait for other people. 
+                stay curious about the world, if you care about a problem enough, go solve it, don't wait for other people. 
               </li>
               <li className="plain-article-item">
-                literally right now is the best time to do anything, stop talking, put together a plan and execute.
+                literally right now is the best time to do anything.
               </li>
               <li className="plain-article-item">
-                the best things are done with the help of many people. 
+                the best things are done when interesting people work together. greatness isn't made alone.
               </li>
               <li className="plain-article-item">
                 alway question what you're doing.
               </li>
               <li className="plain-article-item">
-                I respect my parents and grandparents a lot.
+                always show respect and love to parents and grandparents.
               </li>
             </ul>
             <div className="back-button-container">
@@ -644,7 +653,7 @@ function App() {
                 <div className="card-content">
                   <h4 className="card-title">Paris, France</h4>
                   <p className="card-description">
-                    Likely my favourite city in europe.
+                    Likely my favourite city in europe. Amazing food. 
                   </p>
                 </div>
               </div>
@@ -732,7 +741,7 @@ function App() {
 
               <div className="card pink-hover">
                 <div className="card-content">
-                  <h4 className="card-title">New York, America</h4>
+                  <h4 className="card-title">New York, New York</h4>
                   <p className="card-description">
                     My favourite city on the planet. period. 
                   </p>

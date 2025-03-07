@@ -1,46 +1,42 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function WorkEthicReflection() {
+function Ambitious() {
   return (
     <div className="article-page">
       <header className="article-header">
-        <h1>Reflections on Work Ethic and Competition</h1>
+        <h1>Reflections on Authentic vs Performative Ambition</h1>
         <div className="article-meta">
         </div>
       </header>
       
       <article className="article-content">
         <p className="article-lead">
-          For the people who know me best I feel like they'd most likely describe using these words, <strong>hard working, disciplined, competitive</strong>. I think having a combination of these traits is both a blessing and a curse.
+          I've realized there are two types of ambitious people: <strong>authentic and performative</strong>. Understanding the difference has been transformative in how I approach work and personal growth.
         </p>
         
         <p>
-          A mixture of competitiveness and strong work ethic, for almost my entire life has manifested as seeing others work hard and feeling a strong desire to <strong>outwork them</strong>. That feeling has been innate, impossible to describe. This has played out in school and life and I think is a big contributor to where I'm at now in life. Although I think a lot of the holes have exposed themselves as I try to scale that way of being and build something bigger and bigger.
+          People with performative ambition are the people who fall under, as the swedes would call it, good girl syndrome (applies to both genders). They follow playbooks perfectly, check all the boxes off, etc. They care a lot more about <strong>being seen</strong> as doing everything they can rather than <strong>actually</strong> doing everything they can.
         </p>
         
         <p>
-          The first time I really started to see this was when I entered university and most people worked hard and were competitive. I struggled to see what set me apart of the rest, because my whole life, before this point, I've put myself in rooms of people smarter than me but there was always a clear path to, what I considered, becoming smarter than them, I just had to <strong>outwork them</strong> and I was always the hardest working person in any room, so the directions were clear, execute. University was different.
+          There was a great piece called trying to try, one of my favourite parts, "almost any effort will serve to convince us that we have 'tried our hardest', if trying our hardest is all we are trying to do." This way of thinking is a lot more geared towards optics, you're constantly looking to see how other people are perceiving you. People with this performative ambition tend to care a lot more about <strong>feeling</strong> like they're doing the right thing rather than doing the right thing. They confused effort with effectiveness ("I worked hard" vs. "I solved the problem").
         </p>
         
         <p>
-          So I started to reevaluate in the back of my mind, I thought the solution was to scale what I had already been doing, <strong>work even harder!</strong> For my first two semesters, I essentially had no fun lol, I worked 24/7 thinking adding more work, building more projects, connecting with more people was the solution to being "better". As most know energy drinks became my best friend lol.
+          I would say this manifests as spending hours studying to get the best grades (even if you think the class is pointless), working on projects to impress an employer, building something because you want to impress Joe Schmoe 😎 or improving your skills in xyz because you think it'll gain you brownie points with a group of people.
         </p>
         
         <p>
-          After my first coop I both realized a lot about myself and received a lot of helpful feedback. I found that my biggest strength is <strong>executing on tasks</strong>. If I have even a vague idea of I want done I'll get it done faster than most, I'd be willing to lose sleep over it. I know I can deliver and deliver fast. But the part I missed out on was the <strong>planning</strong>, not rushing into things, thinking things through. I actually thought this was something I needed to revert and fix and work slower (which I now think is a silly solution).
+          People with authentic ambitions tend to care a lot more about actually getting the work done. Instead of evaluating their work on this spectrum of "I feel like I've tried my best or at least enough", <strong>it's either you got the work done right or not</strong>, that's it, it's binary. They evaluate work based on its real world impact. People with this ambition tend not to care about what others think, they eliminate the noise and are often using their internal compass when deciding what to build, who to work with, what they want to do with their lives etc.
         </p>
         
         <p>
-          Instead I received good feedback from one of my bosses, he told me that <strong>"sometimes you can't change things about yourself, you just need to figure out how to work around them."</strong> So I took this and started to spend time thinking, planning and then executing on those visions. It seems to be working well for me now, but I also am open and experimenting with different strategies as I continue to work in fast paced environments with smart people.
+          Also note that I was careful not to say that they resist social norms because the conventional "contrarian" has become a trend and, as a result, the complete opposite of what it means to be so. The new contrarians are people who follow their intuition.
         </p>
         
         <p>
-          I was inspired to write this because recently I got bit with the competition bug again and felt a strong desire to outwork everyone. I felt the rushing feeling again of just wanting to jump into any project that sounded exciting. This time, though, I sort of stepped back and realized that <strong>work ethic isn't a competition</strong>, it's about <strong>understanding what's worth killing yourself over</strong> and going all in.
-        </p>
-        
-        <p>
-          When you look at other people and hear them working hard and you have a feel like you need to lock in and work hard, then you know you haven't found something worth obsessing over. This shouldn't be an excuse to not work hard, but rather allow yourself time to think away from work and make sense of what you're doing. The strong need you feel to stick your nose into any project that comes your way without any strong desire or reason pulling you in that direction usually comes from a <strong>scarcity mindset</strong>.
+          I will say I fell victim to the good girl syndrome lol, and I would argue most ambitious people have. For me, it came as a newcomer to Waterloo. I was around people who were playing different games and became almost a chameleon to these communities. I used to be so focused on becoming the best engineer, just building more and more, and things I wasn't even excited about, such that I forgot who I actually was and what pumped me up. It took me moving all the way to Europe and removing myself from certain environments to realize this.
         </p>
       </article>
       
@@ -51,4 +47,4 @@ function WorkEthicReflection() {
   );
 }
 
-export default WorkEthicReflection;
+export default Ambitious;
