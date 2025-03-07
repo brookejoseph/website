@@ -6,6 +6,10 @@ import App from './App';
 import Ambitious from './pages/ambition'
 import WorkEthicReflection from './pages/work-ethic'
 import reportWebVitals from './reportWebVitals';
+import HealthyEatingGuide from './pages/food'
+import Running from './pages/running'
+import LiftingGuide from './pages/lifting'
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -16,6 +20,11 @@ root.render(
         <Route path="/" element={<App />} />
         <Route path="/pages/ambition" element={<Ambitious />} />
         <Route path="/pages/work-ethic" element={<WorkEthicReflection />} />
+        <Route path="/pages/food" element={<HealthyEatingGuide />} />
+        <Route path="/pages/running" element={<Running />} />
+        <Route path="/pages/lifting" element={<LiftingGuide />} />
+
+
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

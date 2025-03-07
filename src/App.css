@@ -12,7 +12,8 @@ body {
 /* App container - grid layout with sidebar */
 .app-container {
   display: grid;
-  grid-template-columns: 200px 1fr;
+  /* Increase the right column proportion */
+  grid-template-columns: 200px minmax(0, 1fr);
   min-height: 100vh;
 }
 
@@ -103,7 +104,9 @@ a:hover {
 /* Main content area */
 .main-content {
   padding: 0 2rem 2rem;
-  max-width: 800px;
+  /* Remove the max-width constraint to allow full width */
+  max-width: none;
+  width: 90%;
   position: relative;
 }
 
@@ -408,6 +411,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1.5rem;
+  width: 100%;
 }
 
 .card {
@@ -556,10 +560,9 @@ h1 {
     display: none;
   }
 
-  .main-content {
-    padding: 0;
-    max-width: none;
-  }
+    .main-content {
+      padding: 0 1rem 2rem;
+    }
 
   .card {
     break-inside: avoid;

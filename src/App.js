@@ -154,17 +154,17 @@ function App() {
                 </div>
               </div>
               <p className="philosophy">
-                I work for my 10 and 80 year old self. I believe true happiness comes from giving more to the world more than you take and solving the problems that matter most to you. 
+                I work for my 10 and 80 year old self. I believe true happiness comes from giving more to the world more than you take and solving the problems that matter to you. 
               </p>
             </header>
 
             <section className="section" ref={sectionRefs.now}>
               <h2 className="section-title">RIGHT NOW I'M</h2>
               <ul className="current-list">
-                <li>I'm training models on embedded systems at Ekkono 🍃 (knowledge distillation and quantization)</li>
-                <li>Solo travelling Europe</li>
-                <li>Building tools for cool companies</li>
-                <li>Building tools for a non profit</li>
+                <li>Training models on embedded systems at Ekkono (knowledge distillation and quantization)</li>
+                <li>Solo travelling Europe.</li>
+                <li>Building products for fast growing companies.</li>
+                <li>Dismantling misaligned incentive structures.</li>
               </ul>
             </section>
 
@@ -214,6 +214,26 @@ function App() {
                 
                 <div className="card pink-hover">
                   <div className="card-content">
+                    <h4 className="card-title">Neo Scholar</h4>
+                    <p className="card-description">
+                      Just a great community of amazing people. 
+                    </p>
+                    <p className="card-link"><a href="https://neo.substack.com/p/meet-the-2025-neo-scholars">See more</a></p>
+                  </div>
+                </div>
+
+                <div className="card pink2-hover">
+                  <div className="card-content">
+                    <h4 className="card-title">Contrary VP</h4>
+                    <p className="card-description">
+                      More amazing people!!
+                    </p>
+                    <p className="card-link"><a href="https://www.contrary.com/blog/class-of-2025">See more</a></p>
+                  </div>
+                </div>
+                
+                <div className="card pink-hover">
+                  <div className="card-content">
                     <h4 className="card-title">Dr Tong Lab</h4>
                     <p className="card-description">
                       I made 3D models of proteins.
@@ -234,6 +254,15 @@ function App() {
                       Built a CPU from fundamental components, designing and implementing all logic gates and systems.
                     </p>
                     <p className="card-link"><a href="https://brookejoseph.substack.com/p/building-a-cpu-from-scratch">See more</a></p>
+                  </div>
+                </div>
+
+                <div className="card pink-hover">
+                  <div className="card-content">
+                    <h4 className="card-title">Knowledge Distillation</h4>
+                    <p className="card-description">
+                      Developped an algorithm to leverage knowledge distillation for improving the performance of bad models. 
+                    </p>
                   </div>
                 </div>
                 
@@ -266,6 +295,15 @@ function App() {
                     <p className="card-link"><a href="https://github.com/brookejoseph/VectorDatabase">See more</a></p>
                   </div>
                 </div>
+                
+                <div className="card pink2-hover">
+                  <div className="card-content">
+                    <h4 className="card-title">DP Research</h4>
+                    <p className="card-description">
+                      Presented Differential Privacy research to people across the globe (Washington DC, Germany, Toronto and Sweden). Over 80k people across all events. 
+                    </p>
+                  </div>
+                </div>
   
                 <div className="card yellow-hover">
                   <div className="card-content">
@@ -274,6 +312,15 @@ function App() {
                       Built a fun little tool to connect with people based on images in your camera.
                     </p>
                     <p className="card-link"><a href="https://github.com/brookejoseph/Find-A-Pal">See more</a></p>
+                  </div>
+                </div>
+                
+                <div className="card pink2-hover">
+                  <div className="card-content">
+                    <h4 className="card-title">Epsilon & Delta Tool</h4>
+                    <p className="card-description">
+                      Built a tool to help engineers select privacy parameters. Used by fortune 500 companies.
+                    </p>
                   </div>
                 </div>
 
@@ -286,26 +333,6 @@ function App() {
                     <p className="card-link"><a href="https://sendhearts.app/">See more</a></p>
                   </div>
                 </div>
-
-                <div className="card pink-hover">
-                  <div className="card-content">
-                    <h4 className="card-title">Neo Scholar</h4>
-                    <p className="card-description">
-                      Just a great community of amazing people. 
-                    </p>
-                    <p className="card-link"><a href="https://neo.substack.com/p/meet-the-2025-neo-scholars">See more</a></p>
-                  </div>
-                </div>
-
-                <div className="card pink2-hover">
-                  <div className="card-content">
-                    <h4 className="card-title">Contrary VP</h4>
-                    <p className="card-description">
-                      More amazing people!!
-                    </p>
-                    <p className="card-link"><a href="https://www.contrary.com/blog/class-of-2025">See more</a></p>
-                  </div>
-                </div>
                 
                 <div className="card yellow-hover">
                   <div className="card-content">
@@ -314,6 +341,25 @@ function App() {
                       Created a real Federated learning environment with a Raspberry Pi to demonstrate privacy-preserving ML techniques.
                     </p>
                     <p className="card-link"><a href="https://github.com/brookejoseph/FederatedLearningRaspberry">See more</a></p>
+                  </div>
+                </div>
+
+                <div className="card yellow-hover">
+                  <div className="card-content">
+                    <h4 className="card-title">Training on embedded devices</h4>
+                    <p className="card-description">
+                      Cannot share repo but helped condense an MLP to train in very very small spaces. If you're a memory nerd you'd find this cool.
+                    </p>
+                  </div>
+                </div>
+
+
+                <div className="card pink-hover">
+                  <div className="card-content">
+                    <h4 className="card-title">Burrow</h4>
+                    <p className="card-description">
+                      Built a knowlegde graph that scrapped various sources. Got 700 sign ups.  
+                    </p>
                   </div>
                 </div>
 
@@ -550,15 +596,32 @@ function App() {
           <section className="section">
             <h2 className="section-title">PUBLIC NOTES</h2>
             <ul className="plain-article-list">
-              <li className="plain-article-item">
+              <h3>Thoughts/My Philosophies</h3>
+              <li>
                 <Link to="/pages/ambition" className="plain-link">
-                  My thoughts on ambition - authentic vs performative
+                  My thoughts on ambition.
                 </Link>
               </li>
-              <li className="plain-article-item">
+              <li>
                 <Link to="/pages/work-ethic" className="plain-link">
-                  My thoughts on work ethic
+                  My thoughts on work ethic.
                 </Link>
+              </li>
+              <h3>Health</h3>
+              <li>
+                <Link to="/pages/food" className="plain-link">
+                  The food I eat. 
+                </Link>
+              </li>
+              <li>
+                <Link to="/pages/running" className="plain-link">
+                  How I train for long distance races. 
+                </Link>
+              </li>
+              <li>
+                <Link to="/pages/lifting" className="plain-link">
+                  How I train in the gym. 
+              </Link>
               </li>
             </ul>
             <div className="back-button-container">
@@ -716,7 +779,7 @@ function App() {
                 <div className="card-content">
                   <h4 className="card-title">Nice, France</h4>
                   <p className="card-description">
-                    Nice in the super, go to Eze and Monaco. Also Italy is pretty close and def worth the trip. I also went to a perfume factory which was fun.
+                    Nice in the super nice (haha), Eze and Monaco are worth a visit. Also Italy is pretty close and def worth the trip. I also went to a perfume factory which was fun.
                   </p>
                 </div>
               </div>
@@ -761,7 +824,7 @@ function App() {
                 <div className="card-content">
                   <h4 className="card-title">Naples, Florida</h4>
                   <p className="card-description">
-                   Have spent a lot of time in Florida, Naples is my favourite city. Much better than Miami, its just very expensive :
+                   Have spent a lot of time in Florida, Naples is my favourite city. Much better than Miami, its just very expensive.
                   </p>
                 </div>
               </div>
