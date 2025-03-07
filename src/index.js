@@ -9,8 +9,9 @@ import reportWebVitals from './reportWebVitals';
 import HealthyEatingGuide from './pages/food'
 import Running from './pages/running'
 import LiftingGuide from './pages/lifting'
-
-
+import CoolPeople from './pages/cool-people';
+import InterestingProblems from './pages/problems'
+import ThingsIWontShutUpAbout from './pages/interesting-stuff';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -22,6 +23,9 @@ root.render(
         <Route path="/pages/work-ethic" element={<WorkEthicReflection />} />
         <Route path="/pages/food" element={<HealthyEatingGuide />} />
         <Route path="/pages/running" element={<Running />} />
+        <Route path="/pages/cool-people" element={<CoolPeople />} />
+        <Route path="/pages/problems" element={<InterestingProblems />} />
+        <Route path="/pages/interesting-stuff" element={<ThingsIWontShutUpAbout />} />
         <Route path="/pages/lifting" element={<LiftingGuide />} />
 
 

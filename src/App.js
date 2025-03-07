@@ -27,6 +27,26 @@ function App() {
       section.scrollIntoView({ behavior: 'smooth' });
     }
   };
+    useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash.replace('#', '');
+      
+      if (hash === 'mental') {
+        setActiveSection('mental');
+      } else if (hash === 'another-section') {
+        setActiveSection('another-section');
+      }
+    };
+    
+    handleHashChange();
+    
+    window.addEventListener('hashchange', handleHashChange);
+    
+    // Clean up event listener
+    return () => {
+      window.removeEventListener('hashchange', handleHashChange);
+    };
+  }, []); // Empty dependency array means this runs once on mount
 
   useEffect(() => {
     const handleScroll = () => {
@@ -593,11 +613,21 @@ function App() {
         )}
 
         {activeSection === 'mental' && (
-          <section className="section">
-            <h2 className="section-title">PUBLIC NOTES</h2>
+          <section id="mental" className="section">
+            <h2 id="mental" className="section-title">PUBLIC NOTES</h2>
             <ul className="plain-article-list">
               <h3>Thoughts/My Philosophies</h3>
               <li>
+                <li>
+                  <Link to="/pages/problems" className="plain-link">
+                  Problems I think about.
+                </Link>
+                </li>
+                 <li>
+                  <Link to="/pages/interesting-stuff" className="plain-link">
+                  Things I won't shut up about.
+                </Link>
+                </li>
                 <Link to="/pages/ambition" className="plain-link">
                   My thoughts on ambition.
                 </Link>
@@ -621,6 +651,13 @@ function App() {
               <li>
                 <Link to="/pages/lifting" className="plain-link">
                   How I train in the gym. 
+              </Link>
+              </li>
+              
+              <h3>Extra</h3>
+               <li>
+                <Link to="/pages/cool-people" className="plain-link">
+                  People I find cool. 
               </Link>
               </li>
             </ul>

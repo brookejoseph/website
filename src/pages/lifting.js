@@ -111,7 +111,7 @@ function LiftingGuide() {
       </article>
       
       <div className="article-navigation">
-        <Link to="/?section=fitness" className="back-link">← Back to Home</Link>
+        <Link to="/#mental" className="back-link">← Back to Home</Link>
       </div>
     </div>
   );

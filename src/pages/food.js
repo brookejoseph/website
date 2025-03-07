@@ -152,7 +152,7 @@ function HealthyEatingGuide() {
       </article>
       
       <div className="article-navigation">
-        <Link to="/?section=health" className="back-link">← Back to Home</Link>
+        <Link to="/#mental" className="back-link">← Back to Home</Link>
       </div>
     </div>
   );
