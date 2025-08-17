@@ -169,7 +169,7 @@ function App() {
                 <div className="header-text">
                   <h1>BROOKE JOSEPH</h1>
                   <p className="location">
-                    📍 Currently: In Sweden (<a href="https://twitter.com/BrookeaJoseph">say hi</a>)
+                    📍 Currently: In San Francisco (<a href="https://twitter.com/BrookeaJoseph">say hi</a>)
                   </p>
                 </div>
               </div>
@@ -181,10 +181,9 @@ function App() {
             <section className="section" ref={sectionRefs.now}>
               <h2 className="section-title">RIGHT NOW I'M</h2>
               <ul className="current-list">
-                <li>Training models on embedded systems at Ekkono (knowledge distillation and quantization)</li>
-                <li>Solo travelling Europe.</li>
-                <li>Building products for fast growing companies.</li>
-                <li>Dismantling misaligned incentive structures.</li>
+                <li>Building cool software @ <a href="https://software.inc/About_Us" target="_blank" rel="noopener noreferrer">Software Inc</a></li>
+                <li>Building software for people in blue collar, on the side.</li>
+                <li>Meeting cool founders @ Contrary.</li>
               </ul>
             </section>
 
@@ -192,11 +191,21 @@ function App() {
               <h2 className="section-title">IN PAST LIVES I EXPLORED</h2>
               <h3 className="subsection-title">TEAMS IVE WORKED WITH</h3>
               <div className="cards-container">
+              <div className="card pink-hover">
+                  <div className="card-content">
+                    <h4 className="card-title">Software Inc</h4>
+                    <p className="card-description">
+                      Working on <a href="https://sky.app/" target="_blank" rel="noopener noreferrer">Sky</a>. More on this soon  
+                    </p>
+                    <p className="card-date">San Francisco</p>
+                  </div>
+                </div>
+
                 <div className="card purple-hover">
                   <div className="card-content">
                     <h4 className="card-title">Ekkono</h4>
                     <p className="card-description">
-                      Making models smaller, doing work in model quantization and knowledge distillation.
+                      Making models smaller, doing work in model quantization and knowledge distillation. Shipped software to Volvo, Siemens, and many more big European companies.
                     </p>
                     <p className="card-date">Sweden</p>
                   </div>
@@ -204,7 +213,7 @@ function App() {
                 
                 <div className="card pink-hover">
                   <div className="card-content">
-                    <h4 className="card-title">Stealth</h4>
+                    <h4 className="card-title">1851 Labs</h4>
                     <p className="card-description">
                       Worked with founders who previously scaled to billon $ companies. Built 5 apps end-to-end with <b>100k users.</b> (did growth, building, product design, etc.)
                     </p>
@@ -226,7 +235,7 @@ function App() {
                   <div className="card-content">
                     <h4 className="card-title">CEP</h4>
                     <p className="card-description">
-                      Helping fix a broken educational system in the US. Building tools for an amazing non-profit. 
+                      Helping fix a broken educational system in the US. Building tools for an amazing non-profit. Briefly led software team.
                     </p>
                     <p className="card-date">America</p>
                   </div>
@@ -267,6 +276,16 @@ function App() {
             <section className="section" ref={sectionRefs.projects}>
               <h3 className="subsection-title">BUILDS</h3>
               <div className="cards-container">
+                <div className="card purple-hover">
+                  <div className="card-content">
+                    <h4 className="card-title">Logos</h4>
+                    <p className="card-description">
+                      Helped build a tool for nontechnical people create agents to automate various tasks.
+                    </p>
+                    <p className="card-link"><a href="https://github.com/graviton-studio/logos">See more</a></p>
+                  </div>
+                </div>
+
                 <div className="card yellow-hover">
                   <div className="card-content">
                     <h4 className="card-title">CPU from scratch</h4>
@@ -400,6 +419,15 @@ function App() {
           <section className="section">
             <h2 className="section-title">WRITING</h2>
             <div className="cards-container">
+              <div className="card yellow-hover">
+                <div className="card-content">
+                  <h4 className="card-title">Agents and MCP</h4>
+                  <p className="card-description">
+                    Breakdown of how to build a fast agentic system.
+                  </p>
+                  <p className="card-link"><a href="https://brookejoseph.substack.com/p/zero-to-mcp-fast">Read</a></p>
+                </div>
+              </div>
               <div className="card pink-hover">
                 <div className="card-content">
                   <h4 className="card-title">Introduction to Differential Privacy</h4>
@@ -654,12 +682,6 @@ function App() {
               </Link>
               </li>
               
-              <h3>Extra</h3>
-               <li>
-                <Link to="/pages/cool-people" className="plain-link">
-                  People I find cool. 
-              </Link>
-              </li>
             </ul>
             <div className="back-button-container">
               <button className="back-button" onClick={() => setActiveSection('main')}>
@@ -731,6 +753,15 @@ function App() {
               I've traveled to 17 countries and 22 US states. Here are some of my favourite places. I'll add all my recommendations when I have time one day.
             </p>
             <div className="cards-container">
+
+              <div className="card yellow-hover">
+                <div className="card-content">
+                  <h4 className="card-title">Stockholm, Sweden</h4>
+                  <p className="card-description">
+                    Likely one of my favourite cities ever. Gamla Stan and Södermalm are my favourite areas!
+                  </p>
+                </div>
+              </div>
               <div className="card yellow-hover">
                 <div className="card-content">
                   <h4 className="card-title">Malmo, Sweden</h4>
@@ -769,9 +800,18 @@ function App() {
 
               <div className="card pink-hover">
                 <div className="card-content">
-                  <h4 className="card-title">Amsterdam, Netherlands</h4>
+                  <h4 className="card-title">Oslo, Norway</h4>
                   <p className="card-description">
-                    I've been here a few times, love the city, must have stroopwafel and fries and mayonnaise.
+                    Super expensive but has amazing hikes a bit outside the city. 
+                  </p>
+                </div>
+              </div>
+
+              <div className="card purple-hover">
+                <div className="card-content">
+                  <h4 className="card-title">Dublin, Ireland</h4>
+                  <p className="card-description">
+                    Cute bars, you just have to go to temple bar. The city at night is pretty too. 
                   </p>
                 </div>
               </div>
@@ -790,6 +830,15 @@ function App() {
                   <h4 className="card-title">Dublin, Ireland</h4>
                   <p className="card-description">
                     Cute bars, you just have to go to temple bar. The city at night is pretty too. 
+                  </p>
+                </div>
+              </div>
+
+              <div className="card pink2-hover">
+                <div className="card-content">
+                  <h4 className="card-title">Krakow, Poland</h4>
+                  <p className="card-description">
+                    Highly recommend WWII walking tour. I specfically did a WWII Jewish history walking tour. It was incredibly informative but very sad.
                   </p>
                 </div>
               </div>
