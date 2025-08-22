@@ -16,7 +16,7 @@ function HealthyEatingGuide() {
         </p>
         
         <p>
-          I really love the whole foods "diet", if it didn't come from the ground don't eat it. I'm obvious not a doctor but this is all based on the research I've done. Here is a quick little grocery hall
+          I really love the whole foods "diet", if it didn't come from the ground don't eat it. I'm obviously not a doctor but this is all based on the research I've done. Here is a quick little grocery haul
         </p>
         
         <h3>Twice a year:</h3>
@@ -124,7 +124,7 @@ function HealthyEatingGuide() {
             </ul>
           </li>
           <li>
-            I usually don't get super hungry for dinner, but sometimes I'll meal prep just different sides I can through together quickly. I also sometimes deviate from the chicken and veggies meal and have a few other go to's I'll mention below
+            I usually don't get super hungry for dinner, but sometimes I'll meal prep just different sides I can throw together quickly. I also sometimes deviate from the chicken and veggies meal and have a few other go to's I'll mention below
             <ul>
               <li>
                 option 1

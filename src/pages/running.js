@@ -12,7 +12,7 @@ function Running() {
       
       <article className="article-content">
         <p>
-          you'll likely find better, more rigorious plans somewhere else online. this is mainly for myself to come back to haha.
+          you'll likely find better, more rigorous plans somewhere else online. this is mainly for myself to come back to haha.
         </p>
         
         <h3><strong>Training for cross/track</strong></h3>
@@ -70,7 +70,7 @@ function Running() {
               </li>
             </ul>
           </li>
-          <li>I round that having gels every 5km was perfect for me, towards the end of the race I had them more frequently.</li>
+          <li>I found that having gels every 5km was perfect for me, towards the end of the race I had them more frequently.</li>
         </ul>
         
         <h3><strong>Marathon</strong></h3>
@@ -84,7 +84,7 @@ function Running() {
           </li>
         </ul>
         
-        <h3>few extra notes + things I wish I new sooner</h3>
+        <h3>few extra notes + things I wish I knew sooner</h3>
         
         <ul>
           <li>training shoes and race shoes should be different (this is potentially controversial but is what worked for me)
@@ -95,7 +95,7 @@ function Running() {
                   <li><a href="https://www.nike.com/se/en/w?q=vaporflys&vst=vaporflys">vaporflys</a> are the best possible shoes to race in</li>
                 </ul>
               </li>
-              <li>training shoes → thicker soul, good to run many many miles in
+              <li>training shoes → thicker sole, good to run many many miles in
                 <ul>
                   <li><a href="https://21run.com/se/asics-magic-speed-4-herr-1011b875-101?gad_source=1&gclid=Cj0KCQiAz6q-BhCfARIsAOezPxlELYT1vCjuwDL03hh2kueXf2434VEvxZeiuYFVkmzRS62_u3JI8-EaAgMsEALw_wcB">these are my fav</a></li>
                 </ul>

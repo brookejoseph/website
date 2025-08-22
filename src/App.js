@@ -152,7 +152,7 @@ function App() {
           <div className="section-indicator">
             {activeSection === 'main' && activeScrollSection === 'intro' && 'BROOKE JOSEPH'}
             {activeSection === 'main' && activeScrollSection === 'now' && 'RIGHT NOW I\'M'}
-            {activeSection === 'main' && activeScrollSection === 'work' && 'IN PAST LIVES: TEAMS IVE WORKED WITH'}
+            {activeSection === 'main' && activeScrollSection === 'work' && 'IN PAST LIVES: TEAMS I\'VE WORKED WITH'}
             {activeSection === 'main' && activeScrollSection === 'projects' && 'IN PAST LIVES: PROJECTS'}
             {activeSection === 'writing' && 'TECHNICAL WRITING'}
             {activeSection === 'mental' && 'PUBLIC NOTES APP'}
@@ -192,7 +192,7 @@ function App() {
 
             <section className="section" ref={sectionRefs.work}>
               <h2 className="section-title">IN PAST LIVES I EXPLORED</h2>
-              <h3 className="subsection-title">TEAMS IVE WORKED WITH</h3>
+              <h3 className="subsection-title">TEAMS I'VE WORKED WITH</h3>
               <div className="cards-container">
               <div className="card pink-hover">
                   <div className="card-content">
@@ -218,7 +218,7 @@ function App() {
                   <div className="card-content">
                     <h4 className="card-title">1851 Labs</h4>
                     <p className="card-description">
-                      Worked with founders who previously scaled to billon $ companies. Built 5 apps end-to-end with <b>100k users.</b> (did growth, building, product design, etc.)
+                      Worked with founders who previously scaled to billion $ companies. Built 5 apps end-to-end with <b>100k users.</b> (did growth, building, product design, etc.)
                     </p>
                     <p className="card-date">Toronto</p>
                   </div>
@@ -283,7 +283,7 @@ function App() {
                   <div className="card-content">
                     <h4 className="card-title">Logos</h4>
                     <p className="card-description">
-                      Helped build a tool for nontechnical people create agents to automate various tasks.
+                      Helped build a tool for nontechnical people to create agents to automate various tasks.
                     </p>
                     <p className="card-link"><a href="https://github.com/graviton-studio/logos">See more</a></p>
                   </div>
@@ -303,7 +303,7 @@ function App() {
                   <div className="card-content">
                     <h4 className="card-title">Knowledge Distillation</h4>
                     <p className="card-description">
-                      Developped an algorithm to leverage knowledge distillation for improving the performance of bad models. 
+                      Developed an algorithm to leverage knowledge distillation for improving the performance of bad models. 
                     </p>
                   </div>
                 </div>
@@ -400,7 +400,7 @@ function App() {
                   <div className="card-content">
                     <h4 className="card-title">Burrow</h4>
                     <p className="card-description">
-                      Built a knowlegde graph that scrapped various sources. Got 700 sign ups.  
+                      Built a knowledge graph that scraped various sources. Got 700 sign ups.  
                     </p>
                   </div>
                 </div>
@@ -711,7 +711,7 @@ function App() {
                 be urgent but thoughtful. i love urgent people who go from problem to idea to product or solution fast.
               </li>
               <li className="plain-article-item">
-                follow your gut. it might seem wrong but you're constantly finetuning your instincts and that invaluable. your intuition is the closet source of truth for yourself you will ever get.
+                follow your gut. it might seem wrong but you're constantly finetuning your instincts and that's invaluable. your intuition is the closest source of truth for yourself you will ever get.
               </li>
               <li className="plain-article-item">
                 take all advice with a grain of salt. live your own life and don't assume anyone else knows whats best for you.
@@ -723,7 +723,7 @@ function App() {
                 stay manic, crazy and nerdy.
               </li>
               <li className="plain-article-item">
-               take care of your mind and body. sleep well, work out (everyday, no execuses), eat clean. 
+                               take care of your mind and body. sleep well, work out (everyday, no excuses), eat clean. 
               </li>
               <li className="plain-article-item">
                 stay curious about the world, if you care about a problem enough, go solve it, don't wait for other people. 
@@ -735,7 +735,7 @@ function App() {
                 the best things are done when interesting people work together. greatness isn't made alone.
               </li>
               <li className="plain-article-item">
-                alway question what you're doing.
+                always question what you're doing.
               </li>
               <li className="plain-article-item">
                 always show respect and love to parents and grandparents.
@@ -828,20 +828,11 @@ function App() {
                 </div>
               </div>
 
-              <div className="card purple-hover">
-                <div className="card-content">
-                  <h4 className="card-title">Dublin, Ireland</h4>
-                  <p className="card-description">
-                    Cute bars, you just have to go to temple bar. The city at night is pretty too. 
-                  </p>
-                </div>
-              </div>
-
               <div className="card pink2-hover">
                 <div className="card-content">
                   <h4 className="card-title">Krakow, Poland</h4>
                   <p className="card-description">
-                    Highly recommend WWII walking tour. I specfically did a WWII Jewish history walking tour. It was incredibly informative but very sad.
+                                          Highly recommend WWII walking tour. I specifically did a WWII Jewish history walking tour. It was incredibly informative but very sad.
                   </p>
                 </div>
               </div>
@@ -882,15 +873,6 @@ function App() {
                 </div>
               </div>
 
-              <div className="card yellow-hover">
-                <div className="card-content">
-                  <h4 className="card-title">Nice, France</h4>
-                  <p className="card-description">
-                    Nice in the super, go to Eze and Monaco. Also Italy is pretty close and def worth the trip. I also went to a perfume factory which was fun.
-                  </p>
-                </div>
-              </div>
-
               <div className="card pink-hover">
                 <div className="card-content">
                   <h4 className="card-title">New York, New York</h4>
@@ -904,7 +886,7 @@ function App() {
                 <div className="card-content">
                   <h4 className="card-title">Montreal, Canada</h4>
                   <p className="card-description">
-                   The best city in Canada by farrr. Although the builder scene in Toronto is better :/ 
+                   The best city in Canada by far. Although the builder scene in Toronto is better :/ 
                   </p>
                 </div>
               </div>

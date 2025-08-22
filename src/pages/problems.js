@@ -32,7 +32,7 @@ function InterestingProblems() {
           
           <li><strong>Coordination mechanisms for addressing collective action problems</strong>
             <ul>
-              <li>many of our existential challenges have technically feasible solutions but lack institutional frameworks to implement them. people historically get more done as a small nit collective, how we can produce this environment.</li>
+              <li>many of our existential challenges have technically feasible solutions but lack institutional frameworks to implement them. people historically get more done as a small knit collective, how we can produce this environment.</li>
             </ul>
           </li>
           
@@ -50,7 +50,7 @@ function InterestingProblems() {
           
           <li><strong>Can we build systems that provide humans with a fair and equitable means of compensation and a sense of purpose?</strong>
             <ul>
-              <li>I find this especially interesting in the context of AGI. what happens when it is not longer a matter of skill or knowledge and we have systems that will outperform us in almost every vertical.</li>
+              <li>I find this especially interesting in the context of AGI. what happens when it is no longer a matter of skill or knowledge and we have systems that will outperform us in almost every vertical.</li>
             </ul>
           </li>
           

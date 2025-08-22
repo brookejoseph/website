@@ -12,7 +12,7 @@ function LiftingGuide() {
       
       <article className="article-content">
         <p>
-          I lift 6 days a week and have been (even through other training) since I was 16. I workout in the morning 5am usually but had to push it to 6am when I lived in Toronto. I've gone through any different training plans. Here is how I train and my advice for what its worth haha.
+          I lift 6 days a week and have been (even through other training) since I was 16. I workout in the morning 5am usually but had to push it to 6am when I lived in Toronto. I've gone through many different training plans. Here is how I train and my advice for what it's worth haha.
         </p>
         
         <p>
